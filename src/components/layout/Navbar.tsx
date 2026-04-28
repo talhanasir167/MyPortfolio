@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navVariants } from "@/lib/motion";
-import portraitSrc from "@/assets/profile-placeholder.svg";
+import portraitSrc from "@/assets/talha-nasir-header.jpg";
 
 export function Navbar() {
   const [location] = useLocation();

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import portraitSrc from "@/assets/profile-placeholder.svg";
+import portraitSrc from "@/assets/talha-nasir-hero.png";
 import { getPrefersReducedMotion } from "@/lib/motion";
 import { useState, useEffect } from "react";
 
