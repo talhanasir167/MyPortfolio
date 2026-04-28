@@ -53,16 +53,39 @@ export default function Hire() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof briefSchema>) {
+  async function onSubmit(values: z.infer<typeof briefSchema>) {
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/hire", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        const result = await response.json().catch(() => null);
+        throw new Error(result?.error ?? "Submission failed");
+      }
+
       form.reset();
       toast({
         title: "Request received",
         description: "Thanks — I'll reply within 24 hours.",
       });
-    }, 1000);
+    } catch (error) {
+      toast({
+        title: "Could not send request",
+        description:
+          error instanceof Error
+            ? error.message
+            : "Please try again in a moment.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   const cvUrl = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/cv.pdf`;
