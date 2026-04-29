@@ -222,21 +222,6 @@ export default function Hire() {
                   </CardContent>
                 </Card>
               </StaggerItem>
-              
-              <StaggerItem>
-                <Card className="bg-card/40 backdrop-blur border-border/50">
-                  <CardContent className="p-8">
-                    <h3 className="text-xl font-display font-bold mb-4 flex items-center gap-2">
-                      <Terminal className="text-accent-foreground w-5 h-5" /> Tech Stack
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {["React/Next", "Node", "Python/FastAPI", "Postgres/Supabase", "AI/LLM APIs", "Replit/Cursor"].map(t => (
-                        <Badge key={t} variant="secondary" className="bg-muted text-muted-foreground">{t}</Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </StaggerItem>
             </StaggerContainer>
           </div>
         </div>
@@ -255,9 +240,9 @@ export default function Hire() {
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "5+ Years", desc: "Experience across E-commerce, Healthcare, Fintech, and more." },
-              { title: "Dual Threat", desc: "I ship robust production apps AND vibe-coded rapid prototypes." },
-              { title: "LLM Native", desc: "Hands-on experience training, prompting, and evaluating foundation models." },
+              { title: "6+ Years", desc: "Experience across E-commerce, Healthcare, Fintech, Multi-tenant SaaS, and more." },
+              { title: "Dual Threat", desc: "I ship robust production apps AND vibe-coded rapid prototypes with legacy coding experinece and AI-assisted development." },
+              { title: "LLM Native", desc: "Hands-on experience training, Agentic AI Systems, Data Labeling & Annotation, and evaluating foundation models." },
               { title: "Ready Now", desc: "Available to start immediately without lengthy onboarding." }
             ].map((item, idx) => (
               <StaggerItem key={idx}>

@@ -114,14 +114,14 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Server className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold mb-3">Classical Engineering</h3>
+                  <h3 className="text-2xl font-display font-bold mb-3">Production Engineering</h3>
                   <p className="text-muted-foreground leading-relaxed mb-6">
                     6+ years building robust, scalable full-stack applications across e-commerce, healthcare, and fintech using React, Node.js, and complex database architectures.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-auto">
-                    <Badge variant="outline" className="font-mono bg-background">React/Next.js</Badge>
-                    <Badge variant="outline" className="font-mono bg-background">Node.js</Badge>
-                    <Badge variant="outline" className="font-mono bg-background">PostgreSQL</Badge>
+                    <Badge variant="outline" className="font-mono bg-background">System Architecture</Badge>
+                    <Badge variant="outline" className="font-mono bg-background">Scalable APIs</Badge>
+                    <Badge variant="outline" className="font-mono bg-background">Distributed Systems</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -134,14 +134,15 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Database className="w-6 h-6 text-secondary" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold mb-3">LLM Training</h3>
+                  <h3 className="text-2xl font-display font-bold mb-3">LLM Domain Expertise </h3>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    Hands-on experience with Mindrift and Turing curating large-scale datasets, performing RLHF-style data work, and fine-tuning foundation models.
+                  Hands on RLHF and evaluation work with Toloka, Mindrift and Turing. I don't just use AI tools, I've helped train the models behind them.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-auto">
-                    <Badge variant="outline" className="font-mono bg-background">Python</Badge>
+                    <Badge variant="outline" className="font-mono bg-background">Fine-tuning</Badge>
                     <Badge variant="outline" className="font-mono bg-background">RLHF</Badge>
-                    <Badge variant="outline" className="font-mono bg-background">Evals & QA</Badge>
+                    <Badge variant="outline" className="font-mono bg-background">Annotation & Labeling</Badge>
+                    <Badge variant="outline" className="font-mono bg-background">Model Evaluation</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -154,14 +155,14 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Code className="w-6 h-6 text-blue-400" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold mb-3">Vibe Coding</h3>
+                  <h3 className="text-2xl font-display font-bold mb-3">AI-Assisted Development</h3>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    Fluent in the new AI-assisted paradigm. Leveraging Replit Agent, Cursor, and Claude Code to prototype and ship at 10x speed without sacrificing quality.
+                    Vibe Coding with Classical Engineering experience, fluent in the new AI-assisted paradigm. Leveraging Replit Agent, Cursor, and Claude Code to prototype and ship at 10x speed without sacrificing quality.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-auto">
-                    <Badge variant="outline" className="font-mono bg-background">Replit Agent</Badge>
-                    <Badge variant="outline" className="font-mono bg-background">Cursor</Badge>
-                    <Badge variant="outline" className="font-mono bg-background">AI Workflows</Badge>
+                    <Badge variant="outline" className="font-mono bg-background">Agentic Development</Badge>
+                    <Badge variant="outline" className="font-mono bg-background">Production-Ready MVPs</Badge>
+                    <Badge variant="outline" className="font-mono bg-background">LLM-Powered Apps</Badge>
                   </div>
                 </CardContent>
               </Card>
