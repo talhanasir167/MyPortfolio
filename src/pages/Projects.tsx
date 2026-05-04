@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/ui/fade-in";
 import { projects, industries, categories } from "@/data/projects";
 import { ProjectCard } from "@/components/ProjectCard";
+
+function scrollToHashProject() {
+  const id = window.location.hash.replace(/^#/, "");
+  if (!id || !projects.some((p) => p.id === id)) return;
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<string>("All");
@@ -15,6 +21,32 @@ export default function Projects() {
     if (activeFilter === p.industry) return true;
     return false;
   });
+
+  useEffect(() => {
+    const syncFilterFromHash = () => {
+      const id = window.location.hash.replace(/^#/, "");
+      if (!id || !projects.some((p) => p.id === id)) return;
+      setActiveFilter((prev) => (prev === "All" ? prev : "All"));
+    };
+    syncFilterFromHash();
+    window.addEventListener("hashchange", syncFilterFromHash);
+    return () => window.removeEventListener("hashchange", syncFilterFromHash);
+  }, []);
+
+  useEffect(() => {
+    const id = window.location.hash.replace(/^#/, "");
+    if (!id) return;
+    const scroll = () => scrollToHashProject();
+    scroll();
+    const t1 = window.setTimeout(scroll, 120);
+    const t2 = window.setTimeout(scroll, 400);
+    window.addEventListener("hashchange", scroll);
+    return () => {
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+      window.removeEventListener("hashchange", scroll);
+    };
+  }, [activeFilter]);
 
   return (
     <div className="container mx-auto px-6 py-20 relative min-h-[80vh]">

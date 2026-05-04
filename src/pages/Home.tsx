@@ -70,15 +70,15 @@ export default function Home() {
               
               <FadeIn delay={0.2}>
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.05] tracking-tight mb-6">
-                  I ship <span className="text-foreground">production systems</span>, <br className="hidden md:block"/>
-                  <span className="text-gradient-primary">vibe-code</span> prototypes,<br className="hidden md:block"/>
-                  & train the <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">LLMs</span> behind them.
+                  Production engineering meets<br className="hidden md:block"/>
+                  <span className="text-gradient-primary">AI-assisted speed</span>,<br className="hidden md:block"/>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">and LLM expertise.</span>
                 </h1>
               </FadeIn>
               
               <FadeIn delay={0.3}>
-                <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-light mb-10 leading-relaxed">
-                  Engineering across three eras: classical software craft, AI-assisted generation, and foundation model alignment.
+                <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl font-light mb-10 leading-relaxed">
+                  6+ years of production engineering, fluent in AI-assisted development, and a paid contributor to LLM training pipelines on different platforms. I build MVPs in days and harden them for scale.
                 </p>
               </FadeIn>
               
@@ -134,9 +134,9 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Database className="w-6 h-6 text-secondary" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold mb-3">LLM Domain Expertise </h3>
+                  <h3 className="text-2xl font-display font-bold mb-3">LLM Training Data Experience </h3>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                  Hands on RLHF and evaluation work with Toloka, Mindrift and Turing. I don't just use AI tools, I've helped train the models behind them.
+                    Paid contributor to RLHF, evaluation, and annotation pipelines through Mindrift, Toloka, and Turing, the platforms that supply training data to leading AI labs. Hands-on experience with what makes models good or bad.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     <Badge variant="outline" className="font-mono bg-background">Fine-tuning</Badge>
@@ -171,6 +171,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About teaser */}
+      <section className="py-24 relative border-b border-border/40">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
+          <FadeIn>
+            <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
+              About <span className="text-gradient-primary">me</span>
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+              I'm a software engineer in Lahore with 6+ years in production systems — from Devsinc to independent work across freelance builds and RLHF on Mindrift, Toloka, and Turing. I combine classical rigor with modern AI-assisted tooling and ship async with clear communication.
+            </p>
+            <Button asChild variant="outline" size="lg" className="border-primary/40 hover:bg-primary/10 hover:text-foreground">
+              <Link href="/about" className="inline-flex items-center gap-2">
+                Read the full story <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* Selected Work Mini Strip */}
       <section className="py-24 bg-card/20 border-y border-border/40 relative">
         <div className="container mx-auto px-6">
@@ -186,9 +205,9 @@ export default function Home() {
           </div>
 
           <StaggerContainer className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {projects.filter(p => p.featured).slice(0, 6).map((project, idx) => (
+            {projects.filter(p => p.featured).slice(0, 4).map((project, idx) => (
               <StaggerItem key={project.id}>
-                <Link href="/projects" className="block h-full">
+                <Link href={`/projects#${project.id}`} className="block h-full relative z-0 hover:z-10">
                   <Card className="h-full bg-background/50 border-border/50 hover:border-primary/50 transition-all duration-300 group overflow-hidden">
                     <CardContent className="p-8 sm:p-10 flex flex-col h-full">
                       <div className="flex items-center gap-4 mb-6">

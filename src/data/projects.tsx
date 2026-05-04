@@ -32,43 +32,6 @@ export type Project = {
 // Infra/Deploy -> Observability -> Auth -> Testing -> AI/Tooling
 export const projects: Project[] = [
   {
-    id: "kaiora",
-    title: "Kaiora",
-    overview:
-      "Kaiora is an AI-powered all-in-one health optimization mobile app that unifies nutrition, training, and sleep into a single adaptive system. It turns continuous biometric and behavioral data into daily, science-backed recommendations instead of static plans.",
-    role: "Mobile + Full-stack engineer",
-    tech: [
-      "React Native",
-      "TypeScript",
-      "Expo",
-      "Supabase",
-      "PostgreSQL",
-      "Apple Health",
-      "Google Fit",
-      "Garmin",
-      "Oura",
-      "OpenAI API",
-      "Anthropic Claude API",
-      "iOS",
-      "Android",
-      "Docker",
-      "Jest",
-      "Figma",
-      "Cursor",
-      "Claude Code",
-    ],
-    highlights: [
-      "Built core mobile UI and key user flows in React Native, implemented nutrition tracking (text / voice / image input), training plans, and sleep & recovery views.",
-      "Integrated wearable & health data sources (Apple Health, Google Fit, Garmin, Oura) into a unified health-data layer powering a single Health Score.",
-      "Implemented AI-driven personalization for plans that adapt daily based on user behavior, biometrics, and progress.",
-      "Performance optimizations across screens and data sync paths for smooth use on lower-end devices.",
-    ],
-    category: "Engineering",
-    industry: "Health & Wellness",
-    featured: true,
-    icon: <Smartphone className="w-8 h-8 text-secondary" />
-  },
-  {
     id: "tom",
     title: "TheOneMedical (TOM)",
     overview:
@@ -112,6 +75,43 @@ export const projects: Project[] = [
     icon: <Activity className="w-8 h-8 text-primary" />
   },
   {
+    id: "kaiora",
+    title: "Kaiora",
+    overview:
+      "Kaiora is an AI-powered all-in-one health optimization mobile app that unifies nutrition, training, and sleep into a single adaptive system. It turns continuous biometric and behavioral data into daily, science-backed recommendations instead of static plans.",
+    role: "Mobile + Full-stack engineer",
+    tech: [
+      "React Native",
+      "TypeScript",
+      "Expo",
+      "Supabase",
+      "PostgreSQL",
+      "Apple Health",
+      "Google Fit",
+      "Garmin",
+      "Oura",
+      "OpenAI API",
+      "Anthropic Claude API",
+      "iOS",
+      "Android",
+      "Docker",
+      "Jest",
+      "Figma",
+      "Cursor",
+      "Claude Code",
+    ],
+    highlights: [
+      "Built core mobile UI and key user flows in React Native, implemented nutrition tracking (text / voice / image input), training plans, and sleep & recovery views.",
+      "Integrated wearable & health data sources (Apple Health, Google Fit, Garmin, Oura) into a unified health-data layer powering a single Health Score.",
+      "Implemented AI-driven personalization for plans that adapt daily based on user behavior, biometrics, and progress.",
+      "Performance optimizations across screens and data sync paths for smooth use on lower-end devices.",
+    ],
+    category: "Engineering",
+    industry: "Health & Wellness",
+    featured: true,
+    icon: <Smartphone className="w-8 h-8 text-secondary" />
+  },
+  {
     id: "agzaga",
     title: "Agzaga",
     overview:
@@ -145,7 +145,7 @@ export const projects: Project[] = [
     ],
     category: "Engineering",
     industry: "E-commerce",
-    featured: false,
+    featured: true,
     icon: <ShoppingCart className="w-8 h-8 text-blue-400" />
   },
   {
@@ -255,7 +255,7 @@ export const projects: Project[] = [
     ],
     category: "Engineering",
     industry: "HRMS",
-    featured: true,
+    featured: false,
     icon: <Briefcase className="w-8 h-8 text-secondary" />
   },
   {

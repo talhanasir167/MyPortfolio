@@ -5,7 +5,10 @@ import type { Project } from "@/data/projects";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="bg-card/40 backdrop-blur border-border/50 hover:border-primary/30 transition-all overflow-hidden relative group">
+    <Card
+      id={project.id}
+      className="bg-card/40 backdrop-blur border-border/50 hover:border-primary/30 transition-all overflow-hidden relative group scroll-mt-28 md:scroll-mt-32"
+    >
       <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-primary via-secondary to-primary opacity-50 group-hover:opacity-100 transition-opacity" />
       
       <CardContent className="p-8 md:p-12">

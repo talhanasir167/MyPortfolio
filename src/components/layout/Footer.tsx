@@ -13,6 +13,7 @@ export function Footer() {
             Talha Nasir
           </Link>
           <div className="flex flex-wrap justify-center gap-4 text-sm font-medium">
+            <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">About</Link>
             <Link href="/projects" className="text-muted-foreground hover:text-primary transition-colors">Projects</Link>
             <Link href="/hire" className="text-muted-foreground hover:text-primary transition-colors">Hire Me</Link>
             <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</Link>
@@ -30,6 +31,15 @@ export function Footer() {
             aria-label="Email"
           >
             <Mail size={18} />
+          </a>
+          <a 
+            href="https://github.com/talhanasir167" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full bg-card flex items-center justify-center border border-border/50 text-muted-foreground hover:text-foreground hover:border-border hover:bg-muted/30 transition-all hover:scale-110"
+            aria-label="GitHub"
+          >
+            <Github size={18} />
           </a>
           <a 
             href="https://www.linkedin.com/in/talhanasir305/" 

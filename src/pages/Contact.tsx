@@ -43,6 +43,9 @@ export default function Contact() {
 
       if (!response.ok) {
         const result = await response.json().catch(() => null);
+        if (response.status === 404) {
+          throw new Error("API route not found - run with vercel dev for local form testing.");
+        }
         throw new Error(result?.error ?? "Submission failed");
       }
 
