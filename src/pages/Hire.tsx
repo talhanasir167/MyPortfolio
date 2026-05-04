@@ -154,7 +154,7 @@ export default function Hire() {
           <FadeIn>
             <div className="mb-16">
               <Badge variant="outline" className="mb-4 text-primary border-primary/30 bg-primary/5">Featured Service</Badge>
-              <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">AI-assisted rapid prototyping <br/><span className="text-muted-foreground font-light">— vibe-coded MVPs in days, not months.</span></h2>
+              <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">AI-assisted rapid prototyping <br/><span className="text-muted-foreground font-light">— production-quality MVPs in days, not months.</span></h2>
               <p className="text-xl text-muted-foreground max-w-3xl leading-relaxed">
                 I combine classical engineering rigor with fluent LLM prompting to build high-quality applications at unprecedented speed. By vibe-coding the scaffolding and heavily directing AI tools, I can turn your idea into a deployed, working MVP while maintaining a clean, production-ready architecture.
               </p>
@@ -172,7 +172,7 @@ export default function Hire() {
                     <div className="space-y-6">
                       {[
                         { step: "1", title: "Discovery", desc: "We align on your exact goals, audience, and the core value proposition." },
-                        { step: "2", title: "Vibe-coded prototype", desc: "Rapidly scaffolding the MVP using AI-assisted generation tools." },
+                        { step: "2", title: "Rapid Prototyping", desc: "Rapidly scaffolding the MVP using AI-assisted generation tools." },
                         { step: "3", title: "Iterate with you", desc: "Feedback loops on the live prototype to get the details right." },
                         { step: "4", title: "Production-harden", desc: "Applying classical engineering to ensure security, performance, and scale." },
                         { step: "5", title: "Ship & handoff", desc: "Deployment to production, complete with source code and documentation." }
@@ -243,10 +243,10 @@ export default function Hire() {
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "6+ Years", desc: "Experience across E-commerce, Healthcare, Fintech, Multi-tenant SaaS, and more." },
-              { title: "Dual Threat", desc: "I ship robust production apps AND vibe-coded rapid prototypes with legacy coding experinece and AI-assisted development." },
-              { title: "LLM Native", desc: "Hands-on experience training, Agentic AI Systems, Data Labeling & Annotation, and evaluating foundation models." },
-              { title: "Ready Now", desc: "Available to start immediately without lengthy onboarding." }
+              { title: "6+ Years Production", desc: "Senior engineer at Devsinc and a marketplace SaaS startup. Shipped systems serving 1M+ users at 99.9% uptime." },
+              { title: "AI-Assisted, Production-Grade", desc: "I ship MVPs in days with modern AI tooling, then harden them with classical engineering rigor. Working code, not demos." },
+              { title: "LLM Platform Experience", desc: "Paid RLHF, evaluation, and annotation work on Mindrift, Toloka, Turing. and other platforms." },
+              { title: "Available Now", desc: "Starting this week. MVPs, hourly, or retainers. Typical projects: $10k–$25k." }
             ].map((item, idx) => (
               <StaggerItem key={idx}>
                 <Card className="h-full bg-card/40 border-border/50">

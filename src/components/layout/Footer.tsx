@@ -33,15 +33,6 @@ export function Footer() {
             <Mail size={18} />
           </a>
           <a 
-            href="https://github.com/talhanasir167" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full bg-card flex items-center justify-center border border-border/50 text-muted-foreground hover:text-foreground hover:border-border hover:bg-muted/30 transition-all hover:scale-110"
-            aria-label="GitHub"
-          >
-            <Github size={18} />
-          </a>
-          <a 
             href="https://www.linkedin.com/in/talhanasir305/" 
             target="_blank" 
             rel="noopener noreferrer"
@@ -49,6 +40,15 @@ export function Footer() {
             aria-label="LinkedIn"
           >
             <Linkedin size={18} />
+          </a>
+          <a 
+            href="https://github.com/talhanasir167" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full bg-card flex items-center justify-center border border-border/50 text-muted-foreground hover:text-foreground hover:border-border hover:bg-muted/30 transition-all hover:scale-110"
+            aria-label="GitHub"
+          >
+            <Github size={18} />
           </a>
         </div>
       </div>

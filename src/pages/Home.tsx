@@ -171,25 +171,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About teaser */}
-      <section className="py-24 relative border-b border-border/40">
-        <div className="container mx-auto px-6 max-w-3xl text-center">
-          <FadeIn>
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-              About <span className="text-gradient-primary">me</span>
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-              I'm a software engineer in Lahore with 6+ years in production systems — from Devsinc to independent work across freelance builds and RLHF on Mindrift, Toloka, and Turing. I combine classical rigor with modern AI-assisted tooling and ship async with clear communication.
-            </p>
-            <Button asChild variant="outline" size="lg" className="border-primary/40 hover:bg-primary/10 hover:text-foreground">
-              <Link href="/about" className="inline-flex items-center gap-2">
-                Read the full story <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* Selected Work Mini Strip */}
       <section className="py-24 bg-card/20 border-y border-border/40 relative">
         <div className="container mx-auto px-6">
@@ -324,12 +305,32 @@ export default function Home() {
             <FadeIn delay={0.2} className="relative pl-8 border-l-2 border-border/50">
               <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-secondary ring-4 ring-background" />
               <h3 className="text-2xl font-bold">LLM Trainer & Data Specialist</h3>
-              <p className="text-secondary font-mono text-sm mt-1 mb-4">Mindrift & Turing</p>
+              <p className="text-secondary font-mono text-sm mt-1 mb-4">Mindrift, Toloka, and Turing</p>
               <p className="text-muted-foreground leading-relaxed">
                 Worked on large-scale datasets for training foundation models. Involved in prompt engineering, RLHF data structuring, and rigorous QA across text, image, audio, and video modalities to ensure model safety and alignment.
               </p>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* About teaser */}
+      <section className="py-24 relative border-b border-border/40">
+        <div className="container mx-auto px-6 max-w-3xl text-center">
+          <FadeIn>
+            <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
+              About <span className="text-gradient-primary">me</span>
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+            I'm a software engineer with 6+ years of production experience across marketplaces, healthcare, e-commerce, and SaaS, most of it at Devsinc, where I led marketplace and microservices work for US and European clients.
+            I bring classical engineering rigor and modern AI-assisted speed to every project.
+            </p>
+            <Button asChild variant="outline" size="lg" className="border-primary/40 hover:bg-primary/10 hover:text-foreground">
+              <Link href="/about" className="inline-flex items-center gap-2">
+                Read the full story <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </FadeIn>
         </div>
       </section>
 

@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, MapPin, Sparkles, Code2, Cpu } from "lucide-react";
+import { ArrowRight, Sparkles, Code2, Cpu, User } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -45,28 +45,28 @@ export default function About() {
                   Engineer,{" "}
                   <span className="text-gradient-primary">builder</span>
                   <br />
-                  <span className="text-muted-foreground font-light">&amp; model alignment</span>
+                  <span className="text-muted-foreground font-light">&amp; LLM expertise</span>
                 </h1>
               </FadeIn>
 
               <FadeIn delay={0.1}>
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl mb-8">
-                  A short story: consultancy roots in Lahore, production systems abroad, then independence — shipping software and contributing to the data that trains it.
+                Production-grade builds, AI-assisted velocity, and ongoing work in LLM training and evaluation. Built for the AI era.
                 </p>
               </FadeIn>
 
               <FadeIn delay={0.14} className="flex flex-wrap gap-2 mb-10">
                 <Badge variant="outline" className="rounded-full px-3 py-1 font-normal border-border/60 bg-card/40 backdrop-blur-sm">
-                  <MapPin className="w-3.5 h-3.5 mr-1.5 text-primary shrink-0" />
-                  Lahore, Pakistan
+                  <User className="w-3.5 h-3.5 mr-1.5 text-primary shrink-0" />
+                  Senior engineer
                 </Badge>
                 <Badge variant="outline" className="rounded-full px-3 py-1 font-normal border-border/60 bg-card/40 backdrop-blur-sm">
                   <Code2 className="w-3.5 h-3.5 mr-1.5 text-secondary shrink-0" />
-                  6+ yrs production
+                  Production-grade systems
                 </Badge>
                 <Badge variant="outline" className="rounded-full px-3 py-1 font-normal border-border/60 bg-card/40 backdrop-blur-sm">
                   <Cpu className="w-3.5 h-3.5 mr-1.5 text-blue-400 shrink-0" />
-                  Independent · 2025
+                  LLM training & evaluation
                 </Badge>
               </FadeIn>
 

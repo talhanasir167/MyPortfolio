@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, Linkedin, CheckCircle, Download } from "lucide-react";
+import { Mail, Phone, Linkedin, CheckCircle, Download, Github } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -133,6 +133,22 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-display font-bold mb-1">LinkedIn</h3>
                     <p className="text-muted-foreground font-mono">linkedin.com/in/talhanasir305</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </a>
+          </StaggerItem>
+
+          <StaggerItem>
+            <a href="https://github.com/talhanasir167" target="_blank" rel="noopener noreferrer" className="block">
+              <Card className="bg-card/40 backdrop-blur border-border/50 hover:border-secondary/50 transition-all hover:bg-secondary/5 group">
+                <CardContent className="p-8 flex items-center gap-6">
+                  <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 group-hover:bg-secondary/20">
+                    <Github className="w-6 h-6 text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-display font-bold mb-1">GitHub</h3>
+                    <p className="text-muted-foreground font-mono">github.com/talhanasir167</p>
                   </div>
                 </CardContent>
               </Card>
